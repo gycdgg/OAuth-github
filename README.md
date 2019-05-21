@@ -123,18 +123,19 @@ const result = await axios({
 微信扫码登录
 <img src = "https://images2015.cnblogs.com/blog/731178/201601/731178-20160115132145897-758264873.png">
 <ul>
-  <li>第三方发起微信授权登录请求，微信用户允许授权第三方应用后，微信会拉起应用或重定向到第三方网站，并且带上授权临时票据code参数；
-作。</li>
+  <li>第三方发起微信授权登录请求，微信用户允许授权第三方应用后，微信会拉起应用或重定向到第三方网站，并且带上授权临时票据code参数；</li>
   <li>通过code参数加上AppID和AppSecret等，通过API换取access_token和平台唯一性标识open_id；</li>
-  <li>通过access_token进行接口调用，获取用户基本数据资源或帮助用户实现基本操</li>
+  <li>通过access_token进行接口调用，获取用户基本数据资源或帮助用户实现基本操作。</li>
 </ul>
 以下是京东微信登录的链接
-京东：<a src = "https://open.weixin.qq.com/connect/qrconnect?appid=wx827225356b689e24&state=28136823BFAE1B276713E62C5BCC905639E432AD94386C80756ACAA4306D4AD05AFBDDF21786199D3CC10733743AC209&redirect_uri=https%3A%2F%2Fqq.jd.com%2Fnew%2Fwx%2Fcallback.action%3Fview%3Dnull%26uuid%3D9fe9c6e5b2774cac8507a2f2efb54813&response_type=code&scope=snsapi_login#wechat_redirect">点击登录京东</a>
+京东：<a href = "https://open.weixin.qq.com/connect/qrconnect?appid=wx827225356b689e24&state=28136823BFAE1B276713E62C5BCC905639E432AD94386C80756ACAA4306D4AD05AFBDDF21786199D3CC10733743AC209&redirect_uri=https%3A%2F%2Fqq.jd.com%2Fnew%2Fwx%2Fcallback.action%3Fview%3Dnull%26uuid%3D9fe9c6e5b2774cac8507a2f2efb54813&response_type=code&scope=snsapi_login#wechat_redirect">点击登录京东</a>
 
 ## 小结
 目前国内的app或者web应用大多数都接入了微信扫码、QQ登录等。
 国外平台，facebook，linkedIn，google等也都有开放api供开发者使用。
+
 <img src="https://www.wangbase.com/blogimg/asset/201904/bg2019042101.jpg">
+
 之所以这么火，很大程度还是因为能够带来很多便捷，避免记很多账号密码。
 其次也能保证信息安全。微信/github账号密码对项目都是不可见的，登录界面都是微信官方提供。微信、github服务器对项目服务器也不可能有信息剽窃。
 
