@@ -14,9 +14,9 @@
 
 ### github平台申请授权的web应用
 
-<img src = "./image/github.png">
+<img src = "./server/image/github.png">
 申请成功后如下
-<img src= "./image/gitOauth.png">
+<img src= "./server/image/gitOauth.png">
 
 生成了一个client_id和client_secret
 
@@ -48,7 +48,7 @@ redirect_uri是callback url，用户登录成功github服务器会向这个url�
 跳转后会要求登录，并且询问是否给当前网站授权。操作成功后，github服务器会给上面的redirect_uri发送请求并且请求参数会附带授权码。
 
 用户登录：
-<img src = "./image/wechat.png">
+<img src = "./server/image/wechat.png">
 
 <img src = "https://www.wangbase.com/blogimg/asset/201904/bg2019040907.jpg">
 
@@ -114,7 +114,7 @@ const result = await axios({
 ```
 
 请求response如下：
-<img src="./image/git_info.png">
+<img src="./server/image/git_info.png">
 
 到这里OAuth实现已经完成了，后续做路由跳转或者账号绑定，根据自己产品需求来做就好了。
 在这个demo中拿到数据后直接重定向到一个空白页面，展现用户头像和基本信息
